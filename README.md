@@ -33,3 +33,5 @@ Example: ![image](https://github.com/user-attachments/assets/2fe64876-3b89-4759-
 
 # Working URL :
 https://shoppingai.netlify.app/
+
+backend: https://github.com/pannudeepanshu1/ShopAI_Back
