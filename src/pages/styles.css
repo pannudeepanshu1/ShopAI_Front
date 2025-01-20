@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #3b6c34;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  header input[type="text"] {
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+  
+  header select {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+  }
+  
+  #suggestion-text {
+    font-size: 16px;
+    color: white;
+    font-style: italic;
+    text-align: right;
+    width: 200px;
+    padding-left: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #3b6c34;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dropbtn:hover {
+    background-color: #2d4e26;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  main {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+  }
+  
+  .product-card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counter button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .counter span {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  
+  .cart {
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart h3 {
+    margin-bottom: 20px;
+  }
+  
+  .cart .total p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .cart button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b6c34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart button:hover {
+    background-color: #2d4e26;
+  }
+  
+  #chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #3b6c34;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  #chatbot {
+    background-color: #4b804b;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  #start-voice {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #chatbox {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .chat-message {
+    background-color: #164e00;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  

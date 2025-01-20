@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit and Vegetable Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div class="nav">
+        <input type="text" id="search-box" placeholder="Search products..." />
+        <select id="category-filter">
+          <option value="">All Categories</option>
+          <option value="Fruit">Fruit</option>
+          <option value="Vegetable">Vegetable</option>
+        </select>
+        <div class="dropdown">
+          <button class="dropbtn">Filters</button>
+          <div class="dropdown-content">
+            <a href="#" class="filter-option" data-filter="price">Price</a>
+            <a href="#" class="filter-option" data-filter="type">Type</a>
+            <a href="#" class="filter-option" data-filter="variety">Variety</a>
+          </div>
+        </div>
+      </div>
+      <div id="suggestion-text"></div> <!-- Suggestion Text on the right -->
+    </header>
+
+    <main>
+      <div class="products" id="products">
+        <!-- Product cards will be inserted here by JavaScript -->
+      </div>
+
+      <div class="cart">
+        <h3>Your Cart</h3>
+        <div id="cart-items">
+          <!-- Cart items will be listed here -->
+        </div>
+        <div class="total">
+          <p>Total: $<span id="total-price">0.00</span></p>
+          <button id="place-order">Place Order</button>
+        </div>
+      </div>
+    </main>
+
+    <div id="chatbot-container">
+      <div id="chatbot">
+        <h4>Chatbot: Mira</h4>
+        <div id="chatbox"></div>
+        <button id="start-voice">🎤 Start Voice</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
